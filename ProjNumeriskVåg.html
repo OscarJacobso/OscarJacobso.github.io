@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson | Numerisk Våg</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px"></div>
+    <h1 style="font-size: 50px;">Projekt</h1>
+    <h2 style="font-size: 24px;">Kurs: Beräkningsvetenskap</h2>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline project-page">
+        <section class="project-hero">
+          <img 
+          src="images/rk4t0.2neum.PNG" 
+          class="img project-hero-img" 
+          alt="Project1"
+          />
+          <article>
+            <h2 class="Bl">Numerisk Fortplantning av Våg</h2>
+            <p>
+              Numeriska metoder kan användas för att lösa vågekvationen i rummet och tiden. Detta görs med hjälp av ett antal olika metoder
+              för att lösa ordinära differential ekvationer som modifieras för att fungera
+              i rummet. Undersökningar för de olika metodernas konvergens med mera
+              undersöks även för att få en förståelse om begränsningarna för beräkningen
+              av vågens rörelse i 1 dimension.
+            </p>
+            <!-- Eventual icons -->
+            <div class="project-icons">
+              <!-- <article>
+                <i class="fas fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article> -->
+            </div>
+            <!-- Eventual tags -->
+            <div class="project-tags">
+              Tags: 
+              <a href="projects.html" class="Bl"> Swe </a>
+              <a href="projects.html" class="Bl"> All </a>
+              <a href="projects.html" class="Bl"> Numerical Methods </a>
+            </div>
+          </article>
+        </section>
+        <section class="project-content">
+          <article>
+            <h4 style="font-size: 18px;">Numerisk beräkning av våg i rummet för olika typer av randvillkor | Med hjälp av olika numeriska metoder</h4>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Introduktion</p>
+                <div></div>
+              </header>
+              <p>
+                Målet med detta projekt är att numeriskt beräkna en vågs rörelse i rummet för tre
+                olika randvillkor; Neuman, Dirichlet samt Robin. Problemet med att numeriskt
+                lösa en vågrörelse kan delas upp i ett antal mindre problem som individuellt måste
+                lösas. Till att börja med så löses ett skalärt begynnelsevärdesproblem. Figur 1 visar på en simpel verision av denna simulering i två dimensioner.</p>
+                <canvas id="game-canvas" style="margin-top: 1rem;"></canvas>
+                <p><b> Click to create waves!</b> <br> <b>Figure 1:</b> Vågrörelse simulerad i två rumsdimensioner och en tidsdimension.</p>
+                <button id="reset-button">Reset</button>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Konvergens</p>
+                <div></div>
+              </header>
+              <p>
+                Efter att det skalära problemet lösts med välkända metoder så ställer vi upp
+                några ytterligare metoder som på olika sätt kan användas för att lösa det slutliga
+                problemet. För dessa metoder undersöks konvergens, noggrannhetsordning och
+                energibevarande för att få en uppfattning om vilka föredelar och nackdelar de olika
+                metoderna har.
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Simulering</p>
+                <div></div>
+              </header>
+              <p>
+                Under de slutliga delarna av projektet så undersöks konvergens, spektralradie
+                och egenvärden för de olika metoderna som löser vågekvationen. Slutprodukten för
+                projektet blir att vi med hjälp av de lösningsmetoderna kan förutspå en vågrörelse
+                i rummet och tiden.
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Links</h4>
+              <p class="single-ingredient">
+                <a href="#end">Project Report</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Boundary_value_problem" target="_blank">Boundary Value Problem wiki</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Numerical_method" target="_blank">Numerical Methods wiki</a>
+              </p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p class="single-tool">
+                Runge Kutta
+              </p>
+              <p class="single-tool">
+                Central Difference
+              </p>
+              <p class="single-tool">
+                Wave Equation
+              </p>
+            </div>
+          </article>
+        </section>
+        <div>
+          <iframe src="/Projs/Large projects (Swe)/Project_1.pdf#toolbar=0" width="100%" height="800px">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer id="end">
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 100px"></div>
+
+
+
+<script src="Scripts/2D-Wave.js"></script>
+
+</html>

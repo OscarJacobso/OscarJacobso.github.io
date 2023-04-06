@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<body>
+  <header>
+    <h3>(Work in progress)</h3>
+    <h1>Oscar Jacobson</h1>
+    <!-- <h2>Uppsala University | M.Sc. in Engineering Physics 2023 | Computational Science | Audit Associate at KPMG</h2> -->
+    <nav id="space">
+      <ul>
+        <!-- <li><a href="#" id="a">Links:</a></li> -->
+        <li><a href="https://www.uu.se/" target="_blank" id="b">Uppsala University</a></li>|
+        <li><a href="https://www.uu.se/utbildning/utbildningar/selma/program/?pKod=TTF2Y" target="_blank" id="c">M.Sc. in Engineering Physics 2023</a></li>|
+        <li><a href="https://www.katalog.uu.se/orginfo/?orgId=X61" target="_blank" id="d">Computational Science</a></li>|
+        <li><a href="https://kpmg.com/se/sv/home.html" target="_blank" id="e">Audit Associate at KPMG</a></li>|
+        <li>
+          <a href="#">
+            <div class="dropdown">
+              <span>Curriculum Vitae (CV) <i class="dropdown-arrow"></i></span>
+              <div class="dropdown-content dropdown-menu-center" id="centr">
+                <p><a href="Projs/Resume_Oscar_Jacobson_Swe.pdf" target="_blank">Svenska</a></p>
+                <p><a href="Projs/Resume_Oscar_Jacobson_Eng.pdf" target="_blank">English</a></p>
+              </div>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <nav id="space">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+          <a href="about.html">
+            <div class="dropdown">
+              <span>About <i class="dropdown-arrow"></i></span>
+              <div class="dropdown-content">
+                <p><a href="about.html#Education">Education</a></p>
+                <p><a href="about.html#Experience">Experience</a></p>
+                <p><a href="about.html#Skills">Skills</a></p>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <main>
+    <div class = "vid">
+      <canvas id="game-canvas"></canvas>
+      <div class="content2" id="hide2">
+        <h1>Welcome!</h1>
+        <p>This page is a hobby project made by me, mostly to keep track of past accomplishments.</p>
+        <p>The secondary goal is to make it easy for the reader to get to know me and my work!</p>
+      </div>
+      <div class="content" id="hide">
+        <!-- <h1>The Vicseck model</h1>
+        <h2>... is a mathematical model used to describe active matter.<br>
+        It's incredibly fascinating as it is able to minimally describe very real phenomenons.<br>
+        The above simulation can be likened to schooling prey fish being chased by predatory fish.</h2> -->
+        <h1>The N-Body problem</h1>
+        <h2>...is a mathematical problem that involves predicting the motions of a group of objects, that interact with each other through gravitation. <br> The problem is notoriously difficult because the interactions between each pair of objects affect the motion of every other object in the group, <br> leading to complex and chaotic behavior...
+
+        </h2>
+        <button id="pause-button">Pause</button>
+        <button id="reset-button">Reset</button>
+      </div>
+    </div>
+  </main>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer>
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank"></a>
+  </footer>
+  <div style="height: 200px"></div>
+</body>
+
+
+
+
+
+
+
+
+<!-- Game -->
+<script src="Scripts/N-Body.js"></script>
+
+</html>

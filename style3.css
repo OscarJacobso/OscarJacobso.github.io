@@ -1,0 +1,390 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #f2f2f2;
+	font-family: Arial, sans-serif;
+}
+
+
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 40px;
+	background-color: #000;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h1 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+label {
+	font-size: 18px;
+	font-weight: bold;
+	display: block;
+	margin-bottom: 5px;
+  color: white;
+}
+input[type="text"],
+input[type="email"],
+input[type="subject"],
+textarea {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 0px;
+	border: white;
+	margin-bottom: 20px;
+	width: 100%;
+  background-color: #333;
+  border:none; /* Get rid of the browser's styling */
+  border-bottom:1px solid #777; /* Add your own border */
+  color: white;
+}
+textarea {
+	height: 150px;
+}
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: #fff;
+	padding: 10px 20px;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+#background {
+    background: linear-gradient(to right, #333 50%, #222 0%); 
+  }
+
+
+/* Old */
+/* Set the default font and text color */
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    background-color: #fff;
+  }
+
+
+  html,body{
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+  }
+  
+  header {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .inv {
+    background-color: rgb(24,24,24);
+    margin-left: 0px;
+  }
+
+  .about {
+    margin-top: 100px;
+  }
+
+
+  /* Set the font size and color for headings */
+  h1, h2 {
+    font-family: "Helvetica Neue", sans-serif;
+    color: white;
+    font-size: 40px;
+  }
+
+  h4, h5 {
+    font-family: "Helvetica Neue", sans-serif;
+    color: black;
+    font-size: 12px;
+  }
+
+  h3 {
+    font-family: "Helvetica Neue", sans-serif;
+    color: black;
+    font-size: 16px;
+  }
+
+  h6 {
+    font-family: "Helvetica Neue", sans-serif;
+    color: black;
+    font-size: 16px;
+  }
+  
+
+  .inline {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+  .Bl {
+    color: rgb(24,24,24);
+  }
+
+  nav {
+    align-items: center;
+    margin-left: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: 	rgb(24,24,24);
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+
+
+  .one {
+    background-color: #ff9a55;
+    width: fit-content;
+    flex: 1;
+    block-size: fit-content;
+    float: left;
+    color: black;
+    padding: 10px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+  }
+
+  .two {
+    background-color: #54fffb;
+    width: fit-content;
+    flex: 1;
+    block-size: fit-content;
+    color: black;
+    padding: 10px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+  }
+
+  .three {
+    background-color: #89ffcc;
+    width: fit-content;
+    flex: 1;
+    block-size: fit-content;
+    color: black;
+    padding: 10px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2%;
+  }
+
+  /* .one:hover {
+    background-color: #fff;
+  } */
+
+
+  /* Style the links */
+  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  a:hover {
+    color: 	rgb(105,105,105);
+  }
+
+  #l:hover{
+    color: #fff
+  }
+  
+  /* Add a subtle shadow to buttons */
+  button {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  }
+  
+
+  /* Links social*/
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    clear: both;
+    position: absolute;
+  }
+
+  .top {
+    position: relative;
+  }
+
+  .bot {
+    position: absolute;
+    bottom: 0;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-media a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #333;
+    transition: color 0.2s;
+  }
+  
+  .social-media a:hover {
+    color: #00baff;
+  }
+
+  /* Style all font awesome icons */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #3B5998;
+    color: white;
+  }
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-github {
+    background: #171515;
+    color: white;
+  }
+
+
+  /* Dropdown menu */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(25,25,25);
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,5);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  #Education {
+    scroll-margin-top: 70px;
+  }
+
+  #Experience {
+  scroll-margin-top: 70px;
+  }
+
+  #Skills {
+    scroll-margin-top: 70px;
+  }
+
+
+
+  * {
+    box-sizing: border-box;
+  }
+  
+  .part {
+    display: grid;
+    gap: 2em;
+    justify-content: space-between;
+    grid-template-columns: 1fr;
+  }
+
+  .dropdown-menu-center {
+    left: 50% !important;
+    right: auto !important;
+    text-align: center !important;
+    transform: translate(-50%, 0) !important;
+  }
+
+  .dropdown-arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    margin-bottom: 3px;
+    margin-left: 3px;
+  }
+
+  .dropdown:hover .dropdown-arrow {
+    border: solid	rgb(105,105,105);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(225deg);
+    margin-bottom: -1px;
+    margin-left: 3px;
+  }
+
+
+
+  .proj p {
+    font-size: 0.5rem;
+  }
+
+  .projecet-icons h5,
+  .project-icons p {
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
+
+  .single-instruction header p {
+    /* text-transform: uppercase; */
+    font-weight: 600;
+    margin-bottom: 0;
+    color: black;
+  }

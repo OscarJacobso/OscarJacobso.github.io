@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px"></div>
+    <h1 style="font-size: 50px;">Project</h1>
+    <h2 style="font-size: 24px;">Course: Statistical Machine Learning</h2>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline project-page">
+        <section class="project-hero">
+          <img 
+          src="images/Yeardiff.png" 
+          class="img project-hero-img" 
+          alt="Project1"
+          />
+          <article>
+            <h2 class="Bl">Binary Classification for Lead Roles in Movies</h2>
+            <p>
+              In this project statistical machine learning classifiers are used to predict the (binary)
+              gender of actors with lead roles in Hollywood movies. Predictions were made
+              using a dataset of 1039 different movies containing 13 unique numerical features
+              such as words spoken and gross profits. The performance of four machine learning
+              classifiers were explored and tuned to the problem at hand. One was chosen to test
+              its performance on a test set of 397 new films.
+            </p>
+            <!-- Eventual icons -->
+            <div class="project-icons">
+              <!-- <article>
+                <i class="fas fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article> -->
+            </div>
+            <!-- Eventual tags -->
+            <div class="project-tags">
+              Tags: 
+              <a href="projects.html" class="Bl"> All </a>
+              <a href="projects.html" class="Bl"> Eng </a>
+              <a href="projects.html" class="Bl"> Machine Learning </a>
+            </div>
+          </article>
+        </section>
+        <section class="project-content">
+          <article>
+            <h4 style="font-size: 18px;">Binary Classification Methods</h4>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Logistic Regression</p>
+                <div></div>
+              </header>
+              <p>
+                Logistic regression is a machine learning method of solving classification problems like the one at hand,
+                and the base idea of how it works is that the model uses the logistic function, or the sigmoid function
+                as it is called in order to model the data accordingly. From this, in order to actually learn the logistic
+                regression model the parameters 𝜃 which minimizes the logistic loss function needs to be calculated.
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Discriminant Analysis</p>
+                <div></div>
+              </header>
+              <p>
+                A discriminative model describes how the output y is generated, i.e 𝑝(𝑦|𝑥) There are two models we
+                have worked with in this project, linear and quadratic discriminant analysis. They are both derived
+                from the Gaussian mixture model (GMM) when trained in a supervised way, from fully labeled data
+                results in the LDA and QDA models.
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">K-Nearest Neighbour</p>
+                <div></div>
+              </header>
+              <p>
+                The k-nearest neighbors (k-NN) is a simple and popular algorithm used for both classification and regression tasks in machine learning. The algorithm is based on the principle that data points that are close to each other are likely to belong to the same class or have similar values.
+
+                In the k-NN method, the input consists of the k closest training examples in the feature space. The output is a class membership (for classification) or a real value (for regression). The value of k is a hyperparameter that is chosen by the user.
+                
+                To classify a new data point using k-NN, the algorithm finds the k nearest neighbors in the training data, based on a chosen distance metric (such as Euclidean distance). It then assigns the class of the majority of the k nearest neighbors to the new data point.
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Tree Based Methods</p>
+                <div></div>
+              </header>
+              <p>
+                A tree based method is a subset of the rule-based models. One example of these is the k-NN model
+                described above and will have a lot of the same properties. The essence of a tree based method is that
+                the defining rules can be organized as a binary tree, hence the name. <br><br>
+                When constructing a binary tree the computational power used grows combinatorically
+                with tree size which is never desired. The first way of making a model like this computationally
+                feasible is to make the model greedy, that is, to make the model only care about the current formation
+                of the tree and not care about future iterations. The greedy implementation creates a bias in the model
+                which can be mitigated using great tree-depth. But a very tall(or deep) tree will unfortunately cause
+                over fitting to training data. The model therefore has to be implemented with this trade-off in mind.
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Links</h4>
+              <p class="single-ingredient">
+                <a href="#end">Project report</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">Logistic Regression wiki</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Linear_discriminant_analysis" target="_blank">Linear Discriminant Analysis wiki</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/K-nearest_neighbors_algorithm" target="_blank">K-Nearest Neighbour wiki</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Decision_tree_learning" target="_blank">Tree Based Methods wiki</a>
+              </p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p class="single-tool">
+                Random Forest
+              </p>
+              <p class="single-tool">
+                Feature Importance
+              </p>
+              <p class="single-tool">
+                Parameter Sweep
+              </p>
+            </div>
+          </article>
+        </section>
+        <div>
+          <iframe src="/Projs/Statmaskin_projekt.pdf#toolbar=0" width="100%" height="800px">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer id="end">
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 100px"></div>
+
+
+<script src="Scripts/Stocks.js"></script>
+
+</html>

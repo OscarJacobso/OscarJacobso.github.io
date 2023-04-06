@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px"></div>
+    <h1 style="font-size: 50px;">Project</h1>
+    <h2 style="font-size: 24px;">Course: High Performance Programming</h2>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline project-page">
+        <section class="project-hero">
+          <img 
+          src="images/322px-Mandel_zoom_00_mandelbrot_set.jpg" 
+          class="img project-hero-img" 
+          alt="Project1"
+          />
+          <article>
+            <h2 class="Bl">Simulating an Infinite Set</h2>
+            <p>
+              When coding, the lower bound of time taken for a task to complete is always going to be a predetermined attribute of the the task itself. Depending on the amount, and quality, of resources
+              dedicated to that task then determines what level of performance is achieved compared to the
+              theoretical maximum. Dedicated resources refers to both computational resources and time put
+              in to produce high quality solutions. When seeking peak performance, computational resources
+              are important. But the quality of written code, its structure and how it’s interpreted by the
+              machine is also of great importance.
+            </p>
+            <!-- Eventual icons -->
+            <div class="project-icons">
+              <!-- <article>
+                <i class="fas fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article> -->
+            </div>
+            <!-- Eventual tags -->
+            <div class="project-tags">
+              Tags: 
+              <a href="#" class="Bl"> All </a>
+              <a href="#" class="Bl"> Eng </a>
+              <a href="#" class="Bl"> C </a>
+            </div>
+          </article>
+        </section>
+        <section class="project-content">
+          <article>
+            <h4 style="font-size: 18px;">Simulating the Mandelbrot Set</h4>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">The Set</p>
+                <div></div>
+              </header>
+              <p>
+                The Mandelbrot set is the set of complex numbers defined by the function: <br><br> f(z) = z<sup>2</sup> + c &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  (1) <br><br> Where f(z) ∈ C, Z<sub>0</sub> = 0 and repeating the function never diverges to infinity.
+                <br> The Mandelbrot set is therefore a set of fractal values, derived from different starting points
+                c, in the complex plane where the continuous iterating of function 1 is bounded and never
+                diverges to infinity. These points make up a set with infinite complexity and is by definition
+                not computable in a finite amount of time. <br><br>
+                Assuming a large amount of computational power has been used and being able to store all
+                the complexity in a hypothetical figure, zooming into any of the edges between blue and white
+                of figure 1 below would reveal more and more smaller, self-similar, patterns in infinity.
+                <canvas id="game-canvas" class="width: 1000px; height: 600px;" style="margin-top: 1rem;"></canvas>
+                <p><b> Click to zoom in!</b> <br><b>Figure 1:</b> Simulation of the Mandelbrot Set to 1000 iterations, click the figure to zoom in and reveal almost infinite complexity.</p>
+                
+                <button id="reset-button">Reset</button>
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Computational Complexity</p>
+                <div></div>
+              </header>
+              <p>
+                Because of the simplicity of function 1, generating a sufficiently complex figure of the Mandelbrot set is achievable using a moderate amount of computing power as demonstrated above. The
+                problem setting of computing the Mandelbrot set is predetermined by the desired complexity of
+                the outcome and is therefore malleable. Using this variable problem setting, together with time
+                taken and computational resources used, one can determine the performance of the algorithms
+                and code used to produce the figure. <br><br>
+                The following project will use the computation of the Mandelbrot set with set levels of complexity to determine the efficiency and speed of code executed serially versus in parallel. To
+                examine the benefits and possible drawbacks of parallel implementation
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Links</h4>
+              <p class="single-ingredient">
+                <a href="#end">Project report</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Mandelbrot_set" target="_blank">Mandelbrot Set wiki</a>
+              </p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p class="single-tool">
+                Optimization in C
+              </p>
+              <p class="single-tool">
+                Algorithm Optimization
+              </p>
+              <p class="single-tool">
+                Compiler Flags
+              </p>
+            </div>
+          </article>
+        </section>
+        <div>
+          <iframe src="/Projs/HPP_Project.pdf#toolbar=0" width="100%" height="800px">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer id="end">
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 100px"></div>
+
+
+<script src="Scripts/Mandelbrot.js"></script>
+
+</html>

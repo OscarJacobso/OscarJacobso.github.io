@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv" id="top">
+  <header class="inline">
+    <div style="height: 100px;"></div>
+    <h1>Projects</h1>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline">
+        <!-- Project container -->
+        <section class="project-container">
+          <!-- Tag container -->
+          <div class="tags-container">
+            <h4>Projects</h4>
+            <!-- <hr> -->
+            <div class="tags-list"></div>
+              <hr style="width: 100%;">
+              <a href="projects.html" class="Bl">Bigger Projects (8)</a>
+              <hr style="width: 100%;">
+              <a href="#1" class="Bl">Database Design</a>
+              <a href="#2" class="Bl">Image Analysis (Fltering)</a>
+              <a href="#3" class="Bl">Image Analysis (Classification)</a>
+              <a href="#4" class="Bl">Modelling of Complex Systems </a>
+              <a href="#5" class="Bl">Pipe Flow (Swe)</a>
+              <a href="#6" class="Bl">Robotics (Swe)</a>
+              <a href="#7" class="Bl">DC-Servo Design (Swe)</a>
+              <!-- <a href="#8" class="Bl">Database Design</a> -->
+              <!-- <a onclick="toggleClass('All')" class="Bl"> All (6)</a>
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('Eng')" class="Bl"> Eng (5)</a>
+              <a onclick="toggleClass('Swe')" class="Bl"> Swe (1)</a>
+              <div style="margin-top: 1rem;"></div>
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('C')" class="Bl"> C (2)</a>
+              <a onclick="toggleClass('Matlab')" class="Bl"> Matlab (1)</a>
+              <a onclick="toggleClass('Python')" class="Bl"> Python (3)</a>
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('ML')" class="Bl"> Machine Learning (1)</a> -->
+              <!-- <hr style="width: 100%;"> -->
+              
+          </div>
+          <!-- End of tag container -->
+
+          <!-- Menu list -->
+          <div class="menu-list" style="grid-template-columns: 1fr;">
+            <!-- One project -->
+            <div id="1">
+              <h5 style="font-size: 20px;">AltOnline Database</h5>
+              <p style="font-size: 16px;"> Database Design
+              </p>
+              <iframe src="/Projs/Databasprojekt.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <div id="2">
+              <h5 style="font-size: 20px;">Image filtering</h5>
+              <p style="font-size: 16px;"> Imgae Analysis
+              </p>
+              <iframe src="/Projs/Lab2_Bildanalys.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <div id="3">
+              <h5 style="font-size: 20px;">Classify Coins</h5>
+              <p style="font-size: 16px;"> Image Analysis
+              </p>
+              <iframe src="/Projs/Lab3_Bildanalys.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <div id="4">
+              <h5 style="font-size: 20px;">Meme Spread Model</h5>
+              <p style="font-size: 16px;"> Modelling of Complex Systems
+              </p>
+              <iframe src="/Projs/MCS_lab3.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <div id="5">
+              <h5 style="font-size: 20px;">Rörströmmning</h5>
+              <p style="font-size: 16px;"> Tillämpad Mekanik
+              </p>
+              <iframe src="/Projs/R_rstr_mningslaboration.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <div id="6">
+              <h5 style="font-size: 20px;">Robotik</h5>
+              <p style="font-size: 16px;"> Tillämpad Mekanik
+              </p>
+              <iframe src="/Projs/Rapport_Till_mpad_Mekanik_II.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <div id="7">
+              <h5 style="font-size: 20px;">Kompensering av DC-Servo</h5>
+              <p style="font-size: 16px;"> Reglerteknik
+              </p>
+              <iframe src="/Projs/Reglerteknik_DC_motor.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div>
+            <!-- End of project -->
+            <!-- One project -->
+            <!-- <div id="8">
+              <h5 style="font-size: 20px;">AltOnline Database</h5>
+              <p style="font-size: 16px;"> Database Design
+              </p>
+              <iframe src="/Projs/Databasprojekt.pdf#toolbar=0" width="100%" height="800px">
+              </iframe>
+              <a href="#Top"><button id="reset-button">Back to top</button></a>
+            </div> -->
+            <!-- End of project -->
+          </div>
+          <!-- End of menu list -->
+        </section>
+        <!-- End of project container -->
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer>
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 500px"></div>
+
+
+
+<script>
+  function toggleClass(className) {
+    var allElements = document.querySelectorAll(".toggleable");
+    var elementsToToggle = document.querySelectorAll("." + className);
+
+    // Hide all elements
+    allElements.forEach(function(element) {
+      element.style.display = "none";
+    });
+
+    // Show/hide elements with the specified class
+    elementsToToggle.forEach(function(element) {
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    });
+  }
+</script>
+
+</html>

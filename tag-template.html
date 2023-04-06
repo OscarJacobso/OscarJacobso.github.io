@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Monte Carlo Simulation of Stock Price</title>
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <canvas id="canvas2"></canvas>
+  
+  <script>
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
+    const canvas2 = document.getElementById('canvas2');
+    const ctx2 = canvas2.getContext('2d');
+    
+    // Set canvas size
+    canvas.width = 800;
+    canvas.height = 600;
+    
+    // Set initial stock price and parameters
+    const initialPrice = 100;
+    const drift = 0.05;
+    const volatility = 0.2;
+    const dt = 1/365;
+    const numSteps = 1000;
+    const numSimulations = 20;
+    
+    // Function to generate random colours
+    function getRandomColor() {
+      const letters = '0123456789ABCDEF';
+      let color = '#';
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+
+    
+    // Function to simulate stock price using Monte Carlo simulation
+    function simulateStockPrice(initialPrice, drift, volatility, dt, numSteps) {
+      const stockPrices = [initialPrice];
+      let price = initialPrice;
+      for (let i = 0; i < numSteps; i++) {
+        const normalRandom = Math.random() * Math.sqrt(dt) * 
+          (Math.random() < 0.5 ? -1 : 1);
+        const delta = drift * price * dt + volatility * price * normalRandom;
+        price += delta;
+        stockPrices.push(price);
+      }
+      return stockPrices;
+    }
+    
+    // Array to store stock price simulations
+    const simulations = [];
+    
+    // Simulate stock price and store in array
+    for (let i = 0; i < numSimulations; i++) {
+      simulations.push(simulateStockPrice(initialPrice, drift, volatility, dt, numSteps));
+    }
+    
+    // Find minimum and maximum stock prices for y-axis scaling
+    const minPrice = Math.min(...simulations.map(s => Math.min(...s)));
+    const maxPrice = Math.max(...simulations.map(s => Math.max(...s)));
+    
+    // Set x and y-axis scales
+    const xScale = canvas.width / numSteps;
+    const yScale = canvas.height / (maxPrice - minPrice);
+    
+    // Draw each simulation in a different color
+    function drawSimulations(i) {
+      if (i < numSimulations) {
+        const simulation = simulations[i];
+        ctx.beginPath();
+        ctx.moveTo(0, canvas.height - (simulation[0] - minPrice) * yScale);
+        ctx.strokeStyle = getRandomColor();
+        for (let j = 1; j < numSteps; j++) {
+          setTimeout(() => {
+            ctx.lineTo(j * xScale, canvas.height - (simulation[j] - minPrice) * yScale);
+            ctx.stroke();
+            if (j === numSteps - 1) {
+              drawSimulations(i + 1);
+            }
+          }, 1 * j);
+        }
+      }
+    }
+    
+    drawSimulations(0);
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px"></div>
+    <h1 style="font-size: 50px;">Project</h1>
+    <h2 style="font-size: 24px;">Course: Modelling of Complex Systems</h2>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline project-page">
+        <section class="project-hero">
+          <img 
+          src="images/Lab4_2_G_2.png" 
+          class="img project-hero-img" 
+          alt="Project1"
+          />
+          <article>
+            <h2 class="Bl">Simulating Particle Movement</h2>
+            <p>
+              The Viseck model is a simulation model describing self propelled particles. The model is popular
+              because of its simplicity while being able to describe global and real life phenomenons depending
+              on chosen parameters. There are five basic parameters in the model. The model consists of moving particles bound to a set of rules which determines their future
+              velocities. 
+            </p>
+            <!-- Eventual icons -->
+            <div class="project-icons">
+              <!-- <article>
+                <i class="fas fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article> -->
+            </div>
+            <!-- Eventual tags -->
+            <div class="project-tags">
+              Tags: 
+              <a href="projects.html" class="Bl"> All </a>
+              <a href="projects.html" class="Bl"> Eng </a>
+            </div>
+          </article>
+        </section>
+        <section class="project-content">
+          <article>
+            <h4 style="font-size: 18px;">Particle Movement in the Vicsec Model</h4>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Predator-Prey Simulation</p>
+                <div></div>
+              </header>
+              <p>
+                <canvas id="game-canvas" style="width: 100%;"></canvas>
+                <p><b>Figure 1:</b> A Predator-Prey simulation in the Vicsec model, making use of attraction-, repulsion- and alignment- rules. </p>
+                
+                <button id="reset-button">Reset</button>
+                <button id="pause-button">Reset</button>
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Links</h4>
+              <p class="single-ingredient">
+                <a href="#end">Project report</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Vicsek_model" target="_blank">Vicsek model wiki</a>
+              </p>
+            <div>
+              <h4>Tools</h4>
+              <p class="single-tool">
+                Polarisation
+              </p>
+              <p class="single-tool">
+                Attraction and Aggregation
+              </p>
+              <p class="single-tool">
+                Radius of Influence
+              </p>
+            </div>
+          </article>
+        </section>
+        <div>
+          <iframe src="/Projs/MCS_lab4.pdf#toolbar=0" width="100%" height="800px">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer id="end">
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 100px"></div>
+
+
+<script src="Scripts/Vicsec.js"></script>
+
+</html>

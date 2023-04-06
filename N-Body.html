@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px"></div>
+    <h1 style="font-size: 50px;">Project</h1>
+    <h2 style="font-size: 24px;">Course: High Performance Programming</h2>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline project-page">
+        <section class="project-hero">
+          <img 
+          src="images/image.jpg" 
+          class="img project-hero-img" 
+          alt="Project1"
+          />
+          <article>
+            <h2 class="Bl">Gravitational N-Body Problem</h2>
+            <p>
+              In this report a simulation of free moving particles is carried out using the
+              N-body problem formulation and the symplectic Euler method. The problem
+              as well as the implementation and serial optimization in C code is described.
+              The N-body problem is a set of equations governing the movement and interactions
+              between free moving bodies in an empty space. These equations are infeasible to
+              solve by hand as the complexity grows exponentially with the amount of interacting
+              bodies. Using computer simulations though this is a much more feasible task.
+            </p>
+            <!-- Eventual icons -->
+            <div class="project-icons">
+              <!-- <article>
+                <i class="fas fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article> -->
+            </div>
+            <!-- Eventual tags -->
+            <div class="project-tags">
+              Tags: 
+              <a href="#" class="Bl"> All </a>
+              <a href="#" class="Bl"> Eng </a>
+              <a href="#" class="Bl"> C </a>
+            </div>
+          </article>
+        </section>
+        <section class="project-content">
+          <article>
+            <h4 style="font-size: 18px;">Simulating the N-Body Problem</h4>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl"></p>
+                <div></div>
+              </header>
+              <p>
+                
+                <canvas id="game-canvas" style="width: 100%; margin-top: 1rem;"></canvas>
+                <p><b>Figure 1:</b> A solar system simulated in the N-Body problem</p>
+                <button id="pause-button">Pause</button>
+                <button id="reset-button">Reset</button>
+              </p>
+            </div>
+            <!-- Single instruction
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Step 3</p>
+                <div></div>
+              </header>
+              <p>
+                safsaf sfasdfasfdas dfasdfasdfsafd 
+              </p>
+            </div> -->
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Links</h4>
+              <p class="single-ingredient">
+                <a href="#end">Project report</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/N-body_problem" target="_blank">N-Body problem wiki</a>
+              </p>
+              <p class="single-ingredient">
+                Usefull tools
+              </p>
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p class="single-tool">
+                Symplectic Euler
+              </p>
+              <p class="single-tool">
+                Optimization in C
+              </p>
+              <!-- <p class="single-tool">
+                Usefull skill
+              </p> -->
+            </div>
+          </article>
+        </section>
+        <div>
+          <iframe src="/Projs/Assignment3.pdf#toolbar=0" width="100%" height="800px">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer id="end">
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 100px"></div>
+
+
+<script src="Scripts/N-Body2.js"></script>
+
+</html>

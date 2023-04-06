@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px"></div>
+    <h1 style="font-size: 50px;">Project</h1>
+    <h2 style="font-size: 24px;">Course: Advanced Statistical Machine Learninng</h2>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline project-page">
+        <section class="project-hero">
+          <img 
+          src="images/s1_gibbs.png" 
+          class="img project-hero-img" 
+          alt="Project1"
+          />
+          <article>
+            <h2 class="Bl">Skill Prediction in the SerieA</h2>
+            <p>
+              In the research paper [Herbrich et al.(2007)Herbrich, Minka, and Graepel] by Microsoft, the TrueSkillTM model
+              is presented as a skill rating system for matches between players in any game. TrueSkill is built as an extension of
+              the zero sum, ELO rating system, popularized by the International Chess Federation FIDE in 1970 to rank the skill
+              of all competitive chess players. For Microsoft, players being matched against others of equal skills in an online
+              setting is of crucial importance and a big part of making online gaming fun. <br><br>
+              The TrueSkill model uses Gaussian random variables which can be updated after any performance from a player.
+              By using machine learning this report aims to explain and implement the building blocks required to emulate the
+              TrueSkill rating system. This will then be evaluated on data from the Italian top division of football, the Serie A
+              2018/2019 and from the candidates Chess tournament from 2022.
+            </p>
+            <!-- Eventual icons -->
+            <div class="project-icons">
+              <!-- <article>
+                <i class="fas fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="far fa-clock"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article>
+              <article>
+                <i class="fas fa-user-friends"></i>
+                <h5>Info</h5>
+                <p>other info</p>
+              </article> -->
+            </div>
+            <!-- Eventual tags -->
+            <div class="project-tags">
+              Tags: 
+              <a href="#" class="Bl"> All </a>
+              <a href="#" class="Bl"> Eng </a>
+              <a href="#" class="Bl"> Machine Learning</a>
+              <a href="#" class="Bl"> Python </a>
+            </div>
+          </article>
+        </section>
+        <section class="project-content">
+          <article>
+            <h4 style="font-size: 18px;">Implementing the TrueSkill model using machine learning</h4>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Formulating the TrueSkill model</p>
+                <div></div>
+              </header>
+              <p>
+                <!-- <canvas id="game-canvas" style="width: 100%;"></canvas> -->
+                <!-- <p><b>Figure 1:</b> Bladsdfsaf</p> -->
+                <!-- <button id="reset-button">Reset</button> -->
+                The TrueSkill model uses the final standings in any match to determine the skill of players involved in that match.
+                The predicted skill of a player is assumed to be a Gaussian distribution with their expected skill as the mean value
+                and the variance reflecting the uncertainty of performance from that player. This way a more skilled player is
+                always assumed to win but the chance of an upset is clearly defined and can be modeled. After every match the
+                skill of involved players is updated by Bayesian inference given the outcome of the game. In this project a two
+                player model is implemented to reflect the two teams in a game of football.
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Gibbs sampling</p>
+                <div></div>
+              </header>
+              <p>
+                Gibbs sampling is a Markov Chain Monte Carlo (MCMC) method used for statistical inference and probabilistic modeling. It is a technique for obtaining a sequence of samples from a multivariate probability distribution by iteratively sampling each variable given the current values of the other variables.
+                The main idea behind Gibbs sampling is to iteratively update the values of each variable in a way that, over time, the samples drawn from the distribution converge to its true values. In each iteration, a single variable is sampled from its conditional distribution given the values of the other variables. This process continues until convergence is reached or a sufficient number of samples are collected.
+                <br><br>Using Gibbs sampling and recorded data from a season of games from the Serie A the relative skill of each team could be simulated.
+              </p>
+            </div>
+            <!-- Single instruction -->
+            <div class="single-instruction">
+              <header>
+                <p class="Bl">Extension</p>
+                <div></div>
+              </header>
+              <p>
+                When considering the outcome of a match, the possibility of a draw is often very high depending on the sport or
+                game played. Chess and football often see a lot of draws happening from evenly skilled opponents and will therefore produce a lot of data which have not been assessed in the model until now. Ideally for skill prediction all data
+                available should probably be utilized in some form. By this logic the existing TrueSkill model will be extended to
+                include the possibility of a draw.
+              </p>
+            </div>
+          </article>
+          <article class="second-column">
+            <div>
+              <h4>Links</h4>
+              <p class="single-ingredient">
+                <a href="#end">Project report</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://www.microsoft.com/en-us/research/project/trueskill-ranking-system/" target="_blank">True Skill paper</a>
+              </p>
+              <p class="single-ingredient">
+                <a href="https://en.wikipedia.org/wiki/Gibbs_sampling" target="_blank">Gibbs sampling wiki</a>
+              </p>
+              <!-- <p class="single-ingredient">
+                Usefull tools
+              </p> -->
+            </div>
+            <div>
+              <h4>Tools</h4>
+              <p class="single-tool">
+                Assumed density filtering
+              </p>
+              <p class="single-tool">
+                Message passing
+              </p>
+              <p class="single-tool">
+                Gibbs sampling
+              </p>
+            </div>
+          </article>
+        </section>
+        <div>
+          <iframe src="/Projs/Advanced_Probabilistic_ML_Project (3).pdf#toolbar=0" width="100%" height="800px">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer id="end">
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 100px"></div>
+
+
+<script src="Scripts/Stocks.js"></script>
+
+</html>

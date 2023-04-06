@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+  <title>Oscar Jacobson</title>
+  <!-- <meta http-equiv="refresh" content="1"> -->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="icon" type="image/x-icon" href="images\O.png">
+</head>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- <li><a href="#">About</a></li> -->
+    <li>
+      <a href="about.html">
+        <div class="dropdown">
+          <span>About <i class="dropdown-arrow"></i></span>
+          <div class="dropdown-content">
+            <p><a href="about.html#Education">Education</a></p>
+            <p><a href="about.html#Experience">Experience</a></p>
+            <p><a href="about.html#Skills">Skills</a></p>
+          </div>
+        </div>
+      </a>
+    </li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="inv">
+  <header class="inline">
+    <div style="height: 100px;"></div>
+    <h1>Projects</h1>
+  </header>
+</div>
+
+<body>
+  <main>
+    <div class="about"></div>
+      <div class="inline">
+        <!-- Project container -->
+        <section class="project-container">
+          <!-- Tag container -->
+          <div class="tags-container">
+            <h4>Projects</h4>
+            <!-- <hr> -->
+            <div class="tags-list"></div>
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('All')" class="Bl"> All (8)</a>
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('Eng')" class="Bl"> English (7)</a>
+              <a onclick="toggleClass('Swe')" class="Bl"> Swedish (1)</a>
+              <!-- <div style="margin-top: 1rem;"></div> -->
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('C')" class="Bl"> C (2)</a>
+              <a onclick="toggleClass('Matlab')" class="Bl"> Matlab (1)</a>
+              <a onclick="toggleClass('Python')" class="Bl"> Python (5)</a>
+              <hr style="width: 100%;">
+              <a onclick="toggleClass('ML')" class="Bl"> Machine Learning (2)</a>
+              <hr style="width: 100%;">
+              <div style="margin-top: 5rem;"></div>
+              <a href="https://www.diva-portal.org/smash/resultList.jsf?dswid=9873&language=en&searchType=UNDERGRADUATE&query=&af=%5B%5D&aq=%5B%5B%7B%22author%22%3A%5B%22Jacobson%2C+Oscar%22%5D%7D%2C%7B%22organisation%22%3A%22Uppsala+University%22%7D%5D%5D&aq2=%5B%5B%5D%5D&aqe=%5B%5D&noOfRows=50&sortOrder=author_sort_asc&sortOrder2=title_sort_asc&onlyFullText=false&sf=all" target="_blank" class="Bl">Publications</a>
+              <hr style="width: 100%;">
+              <a href="SmallerProjects.html" class="Bl">Smaller Projects (7)</a>
+          </div>
+          <!-- End of tag container -->
+
+          <!-- Menu list -->
+          <div class="menu-list">
+            <!-- One project -->
+            <a href="Project1.html" class="Bl proj All Eng Matlab toggleable">
+              <img 
+              src="images/OptionPriceMonteCarlo.png" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>Options Pricing</h5>
+              <p style="font-size: 12px;"> Computational Finance
+                <br>Options pricing in the Black-Scholes model 
+              </p>
+            </a>
+            <!-- End of project -->
+            <!-- One project -->
+            <a href="ProjNumeriskVåg.html" class="Bl proj Swe All Python toggleable" style="background-color: #54fffb;">
+              <img 
+              src="images/rk4t0.2neum.PNG" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>Simulering av våg</h5>
+              <p style="font-size: 12px;">Beräkningsvetenskap
+                <br>Numerisk fortplantning av våg
+              </p>
+            </a>
+            <!-- End of project -->
+
+            <!-- One project -->
+            <a href="CellularAutomata.html" class="Bl proj All Python Eng toggleable" style="background-color: #89ffcc;">
+              <img 
+              src="images/Floor.png" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>Simulating Fire Evacuations</h5>
+              <p style="font-size: 12px;">Modelling of Complex Systems <br> Cellular Automation</p>
+            </a>
+            <!-- End of project -->
+
+            <!-- One project -->
+            <a href="N-Body.html" class="Bl proj All Eng C toggleable">
+              <img 
+              src="images/image.jpg" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>N-Body Problem</h5>
+              <p style="font-size: 12px;">High Performance Programming <br>Simulating Gravity | The N-Body Problem</p>
+            </a>
+            <!-- End of project -->
+            <!-- One project -->
+            <a href="Mandelbrot.html" class="Bl proj All Eng C toggleable" style="background-color: #54fffb;">
+              <img 
+              src="images/322px-Mandel_zoom_00_mandelbrot_set.jpg" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>Simulating Mandelbrot Set</h5>
+              <p style="font-size: 12px;">High Performance Programming <br>Simulating an Infinite Set</p>
+            </a>
+            <!-- End of project -->
+            <!-- One project -->
+            <a href="TrueSkill.html" class="Bl proj All Eng Python ML toggleable" style="background-color: #89ffcc;">
+              <img 
+              src="images/s1_gibbs.png" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>True Skill Model</h5>
+              <p style="font-size: 12px;">Advaced Statistical Machine Learning <br>Skill Prediction using Machine Learning</p>
+            </a>
+            <!-- End of project -->
+            <!-- One project -->
+            <a href="MLFilm.html" class="Bl proj All Eng Python ML toggleable">
+              <img 
+              src="images/Yeardiff.png" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>Lead Roles in Films</h5>
+              <p style="font-size: 12px;">Statistical Machine Learning <br>Binary Prediction</p>
+            </a>
+            <!-- End of project -->
+            <!-- One project -->
+            <a href="Vicsec.html" class="Bl proj All Eng Python toggleable" style="background-color: #54fffb;">
+              <img 
+              src="images/Lab4_2_G_2.png" 
+              alt="project" 
+              class="img project-img"
+              />
+              <h5>The Vicsek Model</h5>
+              <p style="font-size: 12px;">Modelling of Complex Systems<br>Simulating movement | Vicsek Model</p>
+            </a>
+            <!-- End of project -->
+          </div>
+          <!-- End of menu list -->
+        </section>
+        <!-- End of project container -->
+      </div>
+    </div>
+  </main>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <footer>
+    <h3>Connect with me on social media!</h3>
+    <a href="https://www.linkedin.com/in/oscar-jacobson-a25541213/?locale=en_US" class="fa fa-linkedin" target="_blank" id="l"></a>
+    <a href="#" class="fa fa-twitter" id="l"></a>
+    <a href="https://github.com/OscarJacobso" class="fa fa-github" target="_blank" id="l"></a>
+  </footer>
+</body>
+<div style="height: 500px"></div>
+
+
+
+<script>
+  function toggleClass(className) {
+    var allElements = document.querySelectorAll(".toggleable");
+    var elementsToToggle = document.querySelectorAll("." + className);
+
+    // Hide all elements
+    allElements.forEach(function(element) {
+      element.style.display = "none";
+    });
+
+    // Show/hide elements with the specified class
+    elementsToToggle.forEach(function(element) {
+      if (element.style.display === "none") {
+        element.style.display = "block";
+      } else {
+        element.style.display = "none";
+      }
+    });
+  }
+</script>
+
+</html>
