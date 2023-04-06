@@ -579,3 +579,7 @@ body {
     background: #ddd;
     color: black;
   }
+
+    iframe {
+        width: 100% !important;
+    }
