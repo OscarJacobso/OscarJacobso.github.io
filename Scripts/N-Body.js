@@ -31,7 +31,7 @@ resetButton.addEventListener("click", () => {
 
 // define a class for celestial bodies
 class Body {
-  constructor(x, y, mass, vx, vy, size = 5, colour = "black") {
+  constructor(x, y, mass, vx, vy, size = 5, colour = "grey") {
     this.x = x; // x position
     this.y = y; // y position
     this.mass = mass; // mass
