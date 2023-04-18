@@ -5,6 +5,14 @@ body {
     background-color: #fff;
   }
 
+  :root{
+    --Cyan: #30BCED;
+    --Jet: #303036;
+    --Ghost: #FFFAFF;
+    --Tomato: #FC5130;
+    --Black: #050401;
+    --WhiteCoffe: #E6E0D4;
+  }
 
   html,body{
     overflow-x: hidden;
@@ -84,41 +92,44 @@ body {
 
 
   .one {
-    background-color: #ff9a55;
+    /* background-color: #ff9a55; */
+    background-color: var(--WhiteCoffe);
     width: fit-content;
     flex: 1;
     block-size: fit-content;
     float: left;
-    color: black;
+    color: Black;
     padding: 10px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     margin-top: 2%;
   }
 
   .two {
-    background-color: #54fffb;
+    /* background-color: #54fffb; */
+    background-color: var(--WhiteCoffe);
     width: fit-content;
     flex: 1;
     block-size: fit-content;
     color: black;
     padding: 10px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     margin-top: 2%;
   }
 
   .three {
-    background-color: #89ffcc;
+    /* background-color: #89ffcc; */
+    background-color: var(--WhiteCoffe);
     width: fit-content;
     flex: 1;
     block-size: fit-content;
     color: black;
     padding: 10px;
     height: 220px;
-    border-radius: 10px;
+    border-radius: 5px;
     overflow: hidden;
     margin-top: 2%;
   }
@@ -197,16 +208,19 @@ body {
   .fa-linkedin {
     background: #3B5998;
     color: white;
+    box-shadow: 0px 8px 16px 0px rgba(100,100,100,5);
   }
   /* Twitter */
   .fa-twitter {
     background: #55ACEE;
     color: white;
+    box-shadow: 0px 8px 16px 0px rgba(100,100,100,5);
   }
 
   .fa-github {
     background: #171515;
     color: white;
+    box-shadow: 0px 8px 16px 0px rgba(100,100,100,5);
   }
 
 
@@ -579,4 +593,3 @@ body {
     background: #ddd;
     color: black;
   }
-
