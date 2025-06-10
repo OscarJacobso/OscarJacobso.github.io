@@ -1,8 +1,8 @@
 // get the canvas and its context
 const canvas = document.getElementById("game-canvas");
 const context = canvas.getContext("2d");
-canvas.width = 1000;
-canvas.height = 500;
+canvas.width = 1280;
+canvas.height = 400;
 const pauseButton = document.getElementById("pause-button");
 const resetButton = document.getElementById("reset-button");
 let gamePaused = false;
