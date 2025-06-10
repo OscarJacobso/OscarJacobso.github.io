@@ -87,7 +87,7 @@ const bodies = [
   new Body(canvas.width/2, canvas.height/2, 1750, 0, 0, 10, "yellow"),
   new Body(canvas.width/2, canvas.height/2.5, 1, 200, 0, 3, "red"),
   new Body(canvas.width/2, canvas.height/3, 1, 150, 0, 3, "blue"),
-  new Body(canvas.width/2, canvas.height/5, 1, 125, 0, 3, "orange"),
+  new Body(canvas.width/2, canvas.height/4, 1, 125, 0, 3, "orange"),
   new Body(canvas.width/2, canvas.height/6, 1, 100, 0, 3, "green"),
 ];
 
