@@ -1,8 +1,8 @@
 // get the canvas and its context
 const canvas = document.getElementById("game-canvas");
 const context = canvas.getContext("2d");
-canvas.width = 1280;
-canvas.height = 400;
+canvas.width = 1000;
+canvas.height = 500;
 const pauseButton = document.getElementById("pause-button");
 const resetButton = document.getElementById("reset-button");
 let gamePaused = false;
@@ -84,7 +84,7 @@ class Body {
 // create some celestial bodies
 // x, y, mass, vx, vy, size, colour
 const bodies = [
-  new Body(canvas.width/2, canvas.height/4, 1750, 0, 0, 10, "yellow"),
+  new Body(canvas.width/2, canvas.height/2, 1750, 0, 0, 10, "yellow"),
   new Body(canvas.width/2, canvas.height/2.5, 1, 200, 0, 3, "red"),
   new Body(canvas.width/2, canvas.height/3, 1, 150, 0, 3, "blue"),
   new Body(canvas.width/2, canvas.height/5, 1, 125, 0, 3, "orange"),
