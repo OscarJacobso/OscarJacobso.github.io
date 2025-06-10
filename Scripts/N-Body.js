@@ -84,7 +84,7 @@ class Body {
 // create some celestial bodies
 // x, y, mass, vx, vy, size, colour
 const bodies = [
-  new Body(canvas.width/2, canvas.height/4, 1750, 0, 0, 30, "yellow"),
+  new Body(canvas.width/2, canvas.height/2, 1750, 0, 0, 30, "yellow"),
   new Body(canvas.width/2, canvas.height/2.5, 1, 500, 0, 8, "red"),
   new Body(canvas.width/2, canvas.height/3, 1, 400, 0, 8, "blue"),
   new Body(canvas.width/2, canvas.height/6, 1, 350, 0, 8, "orange"),
